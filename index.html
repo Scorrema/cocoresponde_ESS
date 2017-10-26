@@ -9,7 +9,31 @@
 </head>
 <body>
 
- <h1>Ojo mirando .....</h1>
+  <div class="contenedor">
+  
+        <div class="cuadro">
+            <label class="lbl">Peticion&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class ="inp" id="peticion" onkeydown="pregunta(event)">
+            
+
+        </div>
+
+        <div class="cuadro">
+
+            <label class="lbl">Pregunta:</label>
+            <input type="text" id="pregunta" name="name" class="inp"  placeholder="escriba la Pregunta" minlength="2">
+            <input type="button"  value="enviar" class="btn btn-success" required onclick="enviar()">
+        </div>
+    
+        <div id="txt">
+
+        </div>
+        
+        <div id="refresh">
+             <a href="javascript:location.reload()"><input type="button" value="Nueva pregunta" id="btn" class="btn btn-success"></a>
+        </div>
+    
+ </div>
      
 </body>
 <script src="libs/jquery-3.2.1.min.js"></script>
