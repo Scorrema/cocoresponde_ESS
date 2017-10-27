@@ -9,6 +9,10 @@
 </head>
 <body>
 
+
+    <div id="hader">
+
+    </div>
   <div class="contenedor">
   
         <div class="cuadro">
@@ -22,15 +26,17 @@
 
             <label class="lbl">Pregunta:</label>
             <input type="text" id="pregunta" name="name" class="inp"  placeholder="Escriba la pregunta" minlength="2">
-            <input type="button"  value="enviar" class="btn btn-success" required onclick="enviar()">
         </div>
-    
+        
+        <div>
+             <input type="button"  value="enviar" class="btn btn-success" required onclick="enviar()">
+        </div>
         <div id="txt">
 
         </div>
         
         <div id="refresh">
-             <a href="javascript:location.reload()"><input type="button" value="Nueva pregunta" id="btn" class="btn btn-success"></a>
+             <a href="javascript:location.reload()"><input type="button" value="Nueva pregunta" id="btn" class="btn btn-danger"></a>
         </div>
     
  </div>
