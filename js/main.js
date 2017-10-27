@@ -12,13 +12,18 @@ captura = event.key
 
 var frase = ["c", "o", "c", "o", " ", "r","e", "s", "p","o","n","d","e"," ","e","s","t","a"," ","p","r","e","g","u","n","t","a"," ","p","o","r"," ","f","a","v","o","r"," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "];
 
-
+ 
     
 if(captura == "."){
     
     
     bandera = !bandera;
 }
+    if(captura == " "){
+        
+       $("#peticion").val(letra); 
+    } 
+    
     
     if(contador <= frase.length && bandera == true){
         letra = letra+frase[contador];
@@ -67,5 +72,5 @@ setTimeout(function() {
     container.classList.add('cerrar');
     
     document.body.style.overflowY= "visible";// despueés de cargar le devolvemos el scroll
-}, 9000);
+}, 1);
 
